@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Umar | AI & Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Muhammad Umar — BS Computer Science Student, Web Developer & AI Enthusiast. Specializing in Generative AI, RAG systems, and intelligent applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Animated Galaxy Background -->
+  <div class="galaxy-bg">
+    <canvas id="stars"></canvas>
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">UMAR</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="Muhammad_Umar_CV.pdf" download class="btn-download">
+          <i class="fas fa-download"></i> CV
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="line">Muhammad</span>
+        <span class="line accent">Umar</span>
+      </h1>
+      <p class="hero-subtitle">
+        BS Computer Science Student · Web Developer · AI Enthusiast
+      </p>
+      <p class="hero-desc">
+        Building intelligent systems with LLMs, RAG pipelines & modern web technologies.
+        Passionate about turning ideas into practical AI-powered applications.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> Explore Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Get in Touch
+        </a>
+      </div>
+      <div class="hero-social">
+        <a href="https://linkedin.com/in/muhammad-umar488" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/muhammdumardev-hash" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:f20232661022@umt.edu.pk" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+923279774324" aria-label="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="orbit-ring ring-3"></div>
+      <div class="central-orb">
+        <i class="fas fa-brain"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass">
+          <h3>Summary</h3>
+          <p>
+            Computer Science undergraduate at the University of Management and Technology (UMT) with internship experience
+            in AI/ML and Generative AI. Experienced in developing LLM-powered applications, Retrieval-Augmented Generation
+            (RAG) systems, semantic search solutions, and machine learning models. Hands-on experience with Python, Streamlit,
+            embeddings, vector databases, and AI API integration. Interested in building practical AI applications that solve
+            real-world problems.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card glass">
+            <span class="stat-num">7th</span>
+            <span class="stat-label">Semester</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num">99%</span>
+            <span class="stat-label">Internship Score</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">AI Projects</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num">Top</span>
+            <span class="stat-label">Performer Award</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-card glass">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-info">
+          <h3>University of Management and Technology (UMT)</h3>
+          <p class="edu-degree">Bachelor of Science in Computer Science (BSCS)</p>
+          <p class="edu-meta">2023 – Present · Currently in 7th Semester</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">Professional Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item glass">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Generative AI Intern</h3>
+              <span class="timeline-company">Big Brains</span>
+              <span class="timeline-date">2026</span>
+            </div>
+            <ul>
+              <li>Completed a Generative AI internship focused on Large Language Models (LLMs), prompt engineering, embeddings, vector search, and Retrieval-Augmented Generation (RAG).</li>
+              <li>Developed practical AI applications using Python, Streamlit, and AI APIs, applying knowledge retrieval and context-aware response generation.</li>
+              <li>Earned an internship completion certificate with an average score of <strong>99%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-desc">Interactive AI systems with live demos — hover cards for 3D perspective</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: Hospital RAG -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-inner">
+            <div class="project-badge live">Live Demo</div>
+            <div class="project-icon">
+              <i class="fas fa-hospital"></i>
+            </div>
+            <h3>Hospital RAG AI Assistant</h3>
+            <p class="project-tech">Python · Streamlit · FAISS · Groq API · PyMuPDF</p>
+            <p class="project-desc">
+              Hospital-focused AI assistant that answers questions using information retrieved from hospital PDF documents.
+              Implements PDF extraction, chunking, embeddings, and FAISS similarity search for grounded responses.
+            </p>
+            <ul class="project-features">
+              <li>PDF text extraction & document chunking</li>
+              <li>FAISS vector similarity search</li>
+              <li>Categories: Admissions, Departments, Emergency, Patient Safety</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://hospital-rag-assistant-arg7co7qdhslq9d98qrajg.streamlit.app/" target="_blank" rel="noopener" class="btn btn-demo">
+                <i class="fas fa-external-link-alt"></i> View Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Student Dropout -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-inner">
+            <div class="project-badge live">Live Demo</div>
+            <div class="project-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3>Student Dropout Prediction</h3>
+            <p class="project-tech">Python · Pandas · Scikit-learn</p>
+            <p class="project-desc">
+              Machine learning model trained on ~4,424 student records with 36 features to predict dropout risk
+              using academic and personal indicators from first and second semesters.
+            </p>
+            <ul class="project-features">
+              <li>Logistic Regression classifier</li>
+              <li>Feature scaling & preprocessing</li>
+              <li>Risk identification from semester data</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://student-drop-out-prediction-model-8urqnadxnappfds3zjzujapp.streamlit.app/" target="_blank" rel="noopener" class="btn btn-demo">
+                <i class="fas fa-external-link-alt"></i> View Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: E-commerce AI -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-inner">
+            <div class="project-badge live">Live Demo</div>
+            <div class="project-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>E-commerce Customer Support AI</h3>
+            <p class="project-tech">Python · Streamlit · RAG · ChromaDB · Groq API</p>
+            <p class="project-desc">
+              AI-powered customer support assistant that answers e-commerce queries using a knowledge base
+              and Retrieval-Augmented Generation for accurate, context-aware responses.
+            </p>
+            <ul class="project-features">
+              <li>Semantic search with vector embeddings</li>
+              <li>RAG pipeline for grounded answers</li>
+              <li>Real-time conversational support</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://afk82cfa8cxkkbbzbsvbvi.streamlit.app/" target="_blank" rel="noopener" class="btn btn-demo">
+                <i class="fas fa-external-link-alt"></i> View Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Big Brains Agent -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-inner">
+            <div class="project-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Big Brains Customer Support AI</h3>
+            <p class="project-tech">Python · Streamlit · ChromaDB · Groq API · Sentence Transformers</p>
+            <p class="project-desc">
+              AI-powered customer support agent answering questions about courses, internships, products,
+              services, learning resources, and policies with grounded retrieval.
+            </p>
+            <ul class="project-features">
+              <li>Embeddings + semantic search (ChromaDB)</li>
+              <li>Chat history with SQLite</li>
+              <li>Avoids unsupported answers gracefully</li>
+            </ul>
+            <div class="project-actions">
+              <span class="btn btn-disabled">Demo Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: WhatsApp Bot -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-inner">
+            <div class="project-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp AI Chatbot</h3>
+            <p class="project-tech">n8n · WhatsApp · AI Chat Model</p>
+            <p class="project-desc">
+              AI-powered WhatsApp chatbot built with n8n workflows that receives messages
+              and generates automated, intelligent conversational responses.
+            </p>
+            <ul class="project-features">
+              <li>Automated message handling</li>
+              <li>AI chat model integration</li>
+              <li>Seamless WhatsApp experience</li>
+            </ul>
+            <div class="project-actions">
+              <span class="btn btn-disabled">Demo Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>C++</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+          <h3>AI / ML & Generative AI</h3>
+          <div class="skill-tags">
+            <span>Machine Learning</span>
+            <span>Generative AI</span>
+            <span>LLMs</span>
+            <span>Prompt Engineering</span>
+            <span>RAG</span>
+            <span>Embeddings</span>
+            <span>Semantic Search</span>
+            <span>AI Chatbots</span>
+            <span>Function Calling</span>
+            <span>MCP</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-cubes"></i></div>
+          <h3>Libraries & Frameworks</h3>
+          <div class="skill-tags">
+            <span>Streamlit</span>
+            <span>Pandas</span>
+            <span>Scikit-learn</span>
+            <span>Sentence Transformers</span>
+            <span>FAISS</span>
+            <span>ChromaDB</span>
+            <span>PyMuPDF</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>jQuery</span>
+            <span>Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>VS Code</span>
+            <span>Groq API</span>
+            <span>n8n</span>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Computer Science</h3>
+          <div class="skill-tags">
+            <span>Data Structures</span>
+            <span>Algorithms</span>
+            <span>OOP</span>
+            <span>Database Systems</span>
+            <span>Compiler Design</span>
+            <span>Computer Networks</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="soft-skills glass">
+        <h3><i class="fas fa-heart"></i> Soft Skills</h3>
+        <div class="skill-tags soft">
+          <span>Problem Solving</span>
+          <span>Teamwork</span>
+          <span>Communication</span>
+          <span>Fast Learning</span>
+          <span>Adaptability</span>
+          <span>Time Management</span>
+          <span>Leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Training & Certifications</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass">
+          <div class="cert-icon gold"><i class="fas fa-trophy"></i></div>
+          <h3>Generative and Agentic AI Application Developer</h3>
+          <p class="cert-org">Pak Angels · Cohort 11</p>
+          <p>Practical training covering LLMs, prompt engineering, embeddings, vector databases, RAG, function calling, AI agents, and Model Context Protocol (MCP).</p>
+          <span class="cert-badge">Top Performer Award</span>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Generative AI Internship Completion</h3>
+          <p class="cert-org">Big Brains</p>
+          <p>Certificate issued on 14 October 2026 · Average score of 99%.</p>
+          <span class="cert-badge">99% Score</span>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Cyber Security Workshop</h3>
+          <p class="cert-org">Certificate of Participation</p>
+          <p>Hands-on workshop covering cybersecurity fundamentals and best practices.</p>
+        </div>
+        <div class="cert-card glass">
+          <div class="cert-icon"><i class="fas fa-hands-helping"></i></div>
+          <h3>Allah Walay Trust (AWT)</h3>
+          <p class="cert-org">Volunteer Certificate</p>
+          <p>Community service activities developing teamwork, communication, and collaboration skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-desc">Open to internships, collaborations, and exciting AI projects</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:f20232661022@umt.edu.pk" class="contact-card glass">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>f20232661022@umt.edu.pk</p>
+        </a>
+        <a href="tel:+923279774324" class="contact-card glass">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p>0327-9774324</p>
+        </a>
+        <a href="https://linkedin.com/in/muhammad-umar488" target="_blank" rel="noopener" class="contact-card glass">
+          <i class="fab fa-linkedin-in"></i>
+          <h3>LinkedIn</h3>
+          <p>muhammad-umar488</p>
+        </a>
+        <a href="https://github.com/muhammdumardev-hash" target="_blank" rel="noopener" class="contact-card glass">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <p>muhammdumardev-hash</p>
+        </a>
+      </div>
+      <div class="contact-cta">
+        <a href="Muhammad_Umar_CV.pdf" download class="btn btn-primary btn-lg">
+          <i class="fas fa-download"></i> Download Full CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Muhammad Umar · Built with passion for AI & the cosmos</p>
+      <p class="footer-note">Designed with a galaxy-inspired theme</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
